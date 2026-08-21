@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ULTRONAI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside>
+  <div class="brand"><div class="logo">U</div><div><b>ULTRONAI</b><small>AI Website Builder</small></div></div>
+  <nav>
+    <button class="active" data-page="dashboard">⌂ Dashboard</button>
+    <button data-page="projects">▣ My Websites</button>
+    <button data-page="hosting">◉ Hosting</button>
+    <button data-page="support">? Support</button>
+  </nav>
+  <div class="plan"><small>FREE PLAN</small><p>3 AI generations</p><button id="upgrade">Upgrade</button></div>
+</aside>
+
+<main>
+<header><b>ULTRONAI</b><div class="avatar">U</div></header>
+
+<section id="dashboard" class="page active">
+  <div class="hero">
+    <span>✦ AI POWERED WEBSITE BUILDER</span>
+    <h1>Build your website<br><em>with AI.</em></h1>
+    <p>Describe your idea and ULTRONAI will create a modern website.</p>
+  </div>
+
+  <div class="creator">
+    <h2>What do you want to build?</h2>
+    <textarea id="prompt" placeholder="Create a modern bike shop website with a dark theme..."></textarea>
+    <div class="chips">
+      <button data-example="restaurant">🍔 Restaurant</button>
+      <button data-example="portfolio">🎨 Portfolio</button>
+      <button data-example="bike">🏍️ Bike Shop</button>
+      <button data-example="store">🛍️ Store</button>
+    </div>
+    <button class="primary" id="generate">✦ Generate Website →</button>
+    <p id="status">Ready to create</p>
+  </div>
+
+  <div class="features">
+    <article><b>✦ AI Generation</b><small>Turn ideas into websites.</small></article>
+    <article><b>◈ Live Preview</b><small>See before publishing.</small></article>
+    <article><b>⌘ AI Customize</b><small>Change with prompts.</small></article>
+    <article><b>↗ One Click Launch</b><small>Publish when ready.</small></article>
+  </div>
+</section>
+
+<section id="projects" class="page">
+  <h1>My Websites</h1><p>Your generated websites.</p>
+  <div class="empty">No websites yet</div>
+</section>
+
+<section id="hosting" class="page">
+  <h1>Website Hosting</h1>
+  <div class="hosting"><div>🚀</div><h2>Launch your website</h2><p>Hosting plan</p><strong>₹299</strong><button class="primary" id="hostingBtn">Get Hosting</button></div>
+</section>
+
+<section id="support" class="page">
+  <h1>Support</h1>
+  <div class="support">
+    <input id="supportSubject" placeholder="Subject">
+    <textarea id="supportMessage" placeholder="Write your message..."></textarea>
+    <button class="primary" id="supportBtn">Send Message</button>
+  </div>
+</section>
+</main>
+</div>
+
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+    </html>
+  
